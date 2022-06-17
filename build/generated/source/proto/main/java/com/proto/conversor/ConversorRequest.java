@@ -4,6 +4,10 @@
 package com.proto.conversor;
 
 /**
+ * <pre>
+ *&#47;/modelo de requisição do protobuf
+ * </pre>
+ *
  * Protobuf type {@code conversor.ConversorRequest}
  */
 public final class ConversorRequest extends
@@ -364,6 +368,10 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
+   * <pre>
+   *&#47;/modelo de requisição do protobuf
+   * </pre>
+   *
    * Protobuf type {@code conversor.ConversorRequest}
    */
   public static final class Builder extends

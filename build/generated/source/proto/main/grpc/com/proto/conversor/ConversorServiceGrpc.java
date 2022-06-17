@@ -3,6 +3,9 @@ package com.proto.conversor;
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
+ * <pre>
+ *&#47;/service para conversão
+ * </pre>
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.42.1)",
@@ -91,6 +94,9 @@ public final class ConversorServiceGrpc {
   }
 
   /**
+   * <pre>
+   *&#47;/service para conversão
+   * </pre>
    */
   public static abstract class ConversorServiceImplBase implements io.grpc.BindableService {
 
@@ -115,6 +121,9 @@ public final class ConversorServiceGrpc {
   }
 
   /**
+   * <pre>
+   *&#47;/service para conversão
+   * </pre>
    */
   public static final class ConversorServiceStub extends io.grpc.stub.AbstractAsyncStub<ConversorServiceStub> {
     private ConversorServiceStub(
@@ -138,6 +147,9 @@ public final class ConversorServiceGrpc {
   }
 
   /**
+   * <pre>
+   *&#47;/service para conversão
+   * </pre>
    */
   public static final class ConversorServiceBlockingStub extends io.grpc.stub.AbstractBlockingStub<ConversorServiceBlockingStub> {
     private ConversorServiceBlockingStub(
@@ -160,6 +172,9 @@ public final class ConversorServiceGrpc {
   }
 
   /**
+   * <pre>
+   *&#47;/service para conversão
+   * </pre>
    */
   public static final class ConversorServiceFutureStub extends io.grpc.stub.AbstractFutureStub<ConversorServiceFutureStub> {
     private ConversorServiceFutureStub(

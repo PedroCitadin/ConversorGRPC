@@ -5,18 +5,26 @@ package conversor;
 option java_package = "com.proto.conversor";
 option java_multiple_files = true;
 
+////protobuf utilizado
 
+
+////modelo de requisição do protobuf
 message ConversorRequest{
       double valor = 1;
       string moedaatual = 2;
       string mooedafinal = 3;
 }
 
+
+////resposta do protobuf
 message ConversorResponse{
   double valorfinal = 1;
 }
 
+
+////service para conversão
 service ConversorService{
   rpc conversor(ConversorRequest) returns(ConversorResponse);
 
 }
+

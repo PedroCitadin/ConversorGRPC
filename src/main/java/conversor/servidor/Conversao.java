@@ -79,36 +79,57 @@ public class Conversao {
         float valorFinal = 0;
         switch(conv.getMoedaInicial()){
             case 0:
-                switch (conv.getMoedaFinal()) {
-                    case 1 -> valorFinal = conv.getValor() * requisicao(BRLTOUSD);
-                    case 2 -> valorFinal = conv.getValor() * requisicao(BRLTOEUR);
-                    case 3 -> valorFinal = conv.getValor() * requisicao(BRLTOGBP);
+                switch(conv.getMoedaFinal()){
+                    case 1:
+                        valorFinal = conv.getValor()*requisicao(BRLTOUSD);
+                        break;
+                    case 2:
+                        valorFinal = conv.getValor()*requisicao(BRLTOEUR);
+                        break;
+                    case 3:
+                        valorFinal = conv.getValor()*requisicao(BRLTOGBP);
+                        break;
                 }
                 break;
             case 1:
-                valorFinal = switch (conv.getMoedaFinal()) {
-                    case 0 -> conv.getValor() * requisicao(USDTOBRL);
-                    case 2 -> conv.getValor() * requisicao(USDTOEUR);
-                    case 3 -> conv.getValor() * requisicao(USDTOGBP);
-                    default -> valorFinal;
-                };
+                switch(conv.getMoedaFinal()){
+                    case 0:
+                        valorFinal = conv.getValor()*requisicao(USDTOBRL);
+                        break;
+                    case 2:
+                        valorFinal = conv.getValor()*requisicao(USDTOEUR);
+                        break;
+                    case 3:
+                        valorFinal = conv.getValor()*requisicao(USDTOGBP);
+                        break;
+                }
 
                 break;
             case 2:
-                valorFinal = switch (conv.getMoedaFinal()) {
-                    case 0 -> conv.getValor() * requisicao(EURTOBRL);
-                    case 1 -> conv.getValor() * requisicao(EURTOUSD);
-                    case 3 -> conv.getValor() * requisicao(EURTOGBP);
-                    default -> valorFinal;
-                };
+                switch(conv.getMoedaFinal()){
+                    case 0:
+                        valorFinal = conv.getValor()*requisicao(EURTOBRL);
+                        break;
+                    case 1:
+                        valorFinal = conv.getValor()*requisicao(EURTOUSD);
+                        break;
+                    case 3:
+                        valorFinal = conv.getValor()*requisicao(EURTOGBP);
+                        break;
+                }
                 break;
             case 3:
-                valorFinal = switch (conv.getMoedaFinal()) {
-                    case 0 -> conv.getValor() * requisicao(GBPTOBRL);
-                    case 1 -> conv.getValor() * requisicao(GBPTOUSD);
-                    case 2 -> conv.getValor() * requisicao(GBPTOEUR);
-                    default -> valorFinal;
-                };
+                switch(conv.getMoedaFinal()){
+                    case 0:
+                        valorFinal = conv.getValor()*requisicao(GBPTOBRL);
+                        break;
+                    case 1:
+                        valorFinal = conv.getValor()*requisicao(GBPTOUSD);
+                        break;
+                    case 2:
+                        valorFinal = conv.getValor()*requisicao(GBPTOEUR);
+                        break;
+                }
                 break;
         }
 
