@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package conversor;
+
+option java_package = "com.proto.conversor";
+option java_multiple_files = true;
+
+
+message ConversorRequest{
+      double valor = 1;
+      string moedaatual = 2;
+      string mooedafinal = 3;
+}
+
+message ConversorResponse{
+  double valorfinal = 1;
+}
+
+service ConversorService{
+  rpc conversor(ConversorRequest) returns(ConversorResponse);
+
+}
